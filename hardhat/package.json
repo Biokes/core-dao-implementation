@@ -1,0 +1,11 @@
+{
+  "name": "coredao_storage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Biokes <106444765+Biokes@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "hardhat": "^2.26.1"
+  }
+}

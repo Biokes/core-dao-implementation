@@ -21,3 +21,4 @@ contract StorageTest is Test {
         assertEq(counter.retrieve(), x);
     }
 }
+

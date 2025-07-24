@@ -33,5 +33,4 @@ const config: HardhatUserConfig = {
     artifacts: "./artifacts",
   },
 };
-
 export default config;

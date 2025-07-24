@@ -41,11 +41,22 @@ const config: HardhatUserConfig = {
   //   artifacts: "./artifacts",
   // },
 
-   solidity: "0.8.22",
+   solidity: {
+  version: "0.8.22",
+  settings: {
+    metadata: {
+      bytecodeHash: "none",
+    },
+    optimizer: {
+      enabled: true,
+      runs: 200,
+    },
+  },
+},
   networks: {
-    alchemy: {
+    sepolia: {
       url: `https://eth-sepolia.g.alchemy.com/v2/${ALCHEMY_PRIVATE_KEY}`,
-      accounts: [`0x${PRIVATE_KEY}`],
+      accounts:[PRIVATE_KEY],
     },
     // infura: {
     //   url: process.env.INFURA_RPC_URL,
